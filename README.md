@@ -16,5 +16,4 @@ Static HTML/CSS site, no build step or dependencies.
 - `CNAME` — custom domain for GitHub Pages
 
 ## Deployment
-
 Served via GitHub Pages. Pushing to `main` publishes directly — no build step required.
