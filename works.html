@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Works — DVKarts</title>
+<meta name="description" content="Artwork by Deepak Vishwakarma — traditional ink and pencil pieces, and digital illustration for children's books.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">DV<span>Karts</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="works.html" class="active">My Works</a>
+      <a href="app.html">App</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 32px;">
+    <div class="container">
+      <p class="eyebrow">Portfolio</p>
+      <h1>My Works</h1>
+      <p class="lede">
+        Traditional pen-and-ink pieces alongside digital illustration made
+        for children's books. Filter by medium to browse either side of the work.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top: 32px;">
+    <div class="container">
+
+      <div class="chip-row" id="filterRow">
+        <button class="chip active" data-filter="all">All <span class="count">32</span></button>
+        <button class="chip" data-filter="traditional">Traditional <span class="count">10</span></button>
+        <button class="chip" data-filter="digital">Digital <span class="count">22</span></button>
+      </div>
+
+      <div class="grid grid-3" id="workGrid">
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-two-friends.jpg" alt="Ink illustration of two friends seated together"></div>
+          <div class="card-body"><p class="tag">Ink</p><h3>Two Friends</h3><p>Fine-line ink piece built from careful cross-hatching.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-portrait-study.jpg" alt="Pencil portrait study of a girl"></div>
+          <div class="card-body"><p class="tag">Pencil</p><h3>Portrait Study</h3><p>A likeness study focused on shading and form.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-girl-in-jacket.jpg" alt="Ink portrait of a girl in a jacket"></div>
+          <div class="card-body"><p class="tag">Ink</p><h3>Girl in a Jacket</h3><p>A quick-gesture portrait rendered entirely in pen.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-medieval-dress.jpg" alt="Ink illustration of a figure in a medieval dress"></div>
+          <div class="card-body"><p class="tag">Ink</p><h3>Medieval Dress</h3><p>Costume study exploring folds and drape in linework.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-lady-portrait.jpg" alt="Pencil portrait of a lady"></div>
+          <div class="card-body"><p class="tag">Pencil</p><h3>Lady Portrait</h3><p>A soft graphite study of light across the face.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-russian-lady-i.jpg" alt="Pencil portrait, Russian Lady study one"></div>
+          <div class="card-body"><p class="tag">Pencil</p><h3>Russian Lady I</h3><p>First of a two-part costume and portrait study.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-russian-lady-ii.jpg" alt="Pencil portrait, Russian Lady study two"></div>
+          <div class="card-body"><p class="tag">Pencil</p><h3>Russian Lady II</h3><p>Companion piece, same subject in profile.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-hornbill-study.jpg" alt="Ink study of a hornbill perched on a branch"></div>
+          <div class="card-body"><p class="tag">Ink</p><h3>Hornbill Study</h3><p>A close study of feather texture in pen and ink.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-girl-and-ibis.jpg" alt="Cross-hatched ink illustration of a girl beside an ibis"></div>
+          <div class="card-body"><p class="tag">Ink</p><h3>Girl and the Ibis</h3><p>Dense cross-hatching builds mood around a quiet moment.</p></div>
+        </div>
+
+        <div class="card" data-medium="traditional">
+          <div class="card-media"><img src="images/works/traditional-profile-in-red.jpg" alt="Ink profile portrait with a bold red accent shape"></div>
+          <div class="card-body"><p class="tag">Ink &amp; Color</p><h3>Profile in Red</h3><p>Linework portrait set against a single bold accent shape.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-after-school.jpg" alt="Children's book illustration of two kids walking home from school"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Walking Home from School</h3><p>Opening spread of a storybook about bees and honey.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-just-looking.jpg" alt="Children's book illustration of a boy climbing a fence near a bee"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Just Looking for Flowers</h3><p>David reassures Kathy that the bee means no harm.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-queen-bee.jpg" alt="Children's book illustration of bees on a honeycomb, explaining the queen bee"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>The Queen Bee</h3><p>A page explaining hive roles to a young reader.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-baby-bees.jpg" alt="Children's book illustration of larvae in a honeycomb"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Baby Bees in the Comb</h3><p>Larvae peeking out of their cells, drawn for clarity.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-opening-hive.jpg" alt="Children's book illustration of a beekeeper opening a hive with a smoker"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Opening the Hive</h3><p>David in a beekeeper suit, smoker in hand.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-fresh-honey.jpg" alt="Children's book illustration of honey being poured from a tank into a jar"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Fresh from the Hive</h3><p>Honey poured straight into the jar.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-golden-jars.jpg" alt="Children's book illustration of two kids looking at jars of honey"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Jars of Golden Honey</h3><p>David and Kathy back home with the day's harvest.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-carrying-pollen.jpg" alt="Children's book illustration of a bee carrying pollen on its legs"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Carrying Pollen Home</h3><p>A close, bright frame built around one small detail.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-backpack.jpg" alt="Children's book illustration of a girl imagining a bee wearing a backpack"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>A Bee with a Backpack</h3><p>Kathy's own idea of how a bee should carry pollen.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/bees-feeding-baby-bees.jpg" alt="Children's book illustration of a honeycomb with bees, closing page"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Feeding the Baby Bees</h3><p>Closing page of the bees-and-honey story.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-heading-to-farm.jpg" alt="Children's book illustration of cows outside a red barn at dusk"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Heading to the Farm</h3><p>Opening spread of a storybook about a day on a dairy farm.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-arriving-barn.jpg" alt="Children's book illustration of two people walking among cows toward a barn"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Arriving at the Barn</h3><p>Setting the scene before the morning routine begins.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-cows-in-stall.jpg" alt="Children's book illustration of cows lined up in milking stalls"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Cows in the Stall</h3><p>A wider shot showing the barn's milking line.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-meet-the-cow.jpg" alt="Children's book illustration, close-up of a cow's face"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Meet the Cow</h3><p>A close, friendly introduction to the animal.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-milking-by-hand.jpg" alt="Children's book illustration of a farmhand milking a cow by hand"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Milking by Hand</h3><p>The traditional side of the process, before the machines.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-big-splash.jpg" alt="Children's book illustration of a comedic milk splash"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>A Big Splash</h3><p>A lighter, comedic beat in the middle of the story.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-milking-line.jpg" alt="Children's book illustration of cows hooked to milking machines"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>The Milking Line</h3><p>Modern equipment shown in the same clean, flat style.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-milk-tank.jpg" alt="Children's book illustration of a boy beside a large steel milk tank"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>The Milk Tank</h3><p>Where the morning's milk collects before it ships out.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-feeding-time.jpg" alt="Children's book illustration of two children feeding calves"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Feeding Time</h3><p>The kids take over one of the day's chores.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-baby-calves.jpg" alt="Children's book illustration of baby calves at a fence"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Baby Calves</h3><p>A gentler, quieter beat near the end of the story.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-bottle-for-calf.jpg" alt="Children's book illustration of a boy feeding a calf"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Bottle for a Calf</h3><p>One-on-one care, drawn in close.</p></div>
+        </div>
+
+        <div class="card" data-medium="digital">
+          <div class="card-media"><img src="images/works/farm-walking-home.jpg" alt="Children's book illustration of two boys walking home, thought bubble of a treat"></div>
+          <div class="card-body"><p class="tag">Digital · Children's Book</p><h3>Walking Home</h3><p>Closing page of the dairy-farm story.</p></div>
+        </div>
+
+      </div>
+
+      <div class="filter-empty" id="emptyState" hidden>
+        <p>No pieces in this category yet.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="panel center">
+        <h2>More categories on the way</h2>
+        <p>Watercolor, urban sketching, and event coverage are part of the plan — send over the work and they'll get their own filter here.</p>
+        <a href="contact.html" class="btn btn-primary">Commission or collaborate</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 DVKarts. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="works.html">My Works</a>
+      <a href="app.html">App</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/deepak3dart/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.facebook.com/DeepakDigitalArts" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2.5V5h-2.7C11.5 5 10 6.6 10 9v2.2H8V15h2v6.5h3.3V15h2.4l.4-3.8h-2.8V9.2c0-.5.3-.7.7-.7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@deepak3dart" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 9.7v4.6l4-2.3-4-2.3Z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://deepakvishwakarmaarts.blogspot.com/" target="_blank" rel="noopener" aria-label="Blog">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 4.5h9L19 9v10.5H5V4.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 4.5V9h5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 13h8M8 16h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var chips = document.querySelectorAll('#filterRow .chip');
+  var cards = document.querySelectorAll('#workGrid .card');
+  var empty = document.getElementById('emptyState');
+
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      var f = chip.getAttribute('data-filter');
+      var visible = 0;
+      cards.forEach(function(card){
+        var show = (f === 'all' || card.getAttribute('data-medium') === f);
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      empty.hidden = visible !== 0;
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
