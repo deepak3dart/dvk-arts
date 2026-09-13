@@ -3,161 +3,382 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SketchLog — DVKarts</title>
-<meta name="description" content="SketchLog: a quiet, offline place to track your drawing practice. By DVKarts.">
+<title>Sketchlog — Draw more. Track it all.</title>
+<meta name="description" content="Sketchlog helps you build a consistent drawing practice — snap references, set daily goals, log sketches, and watch your progress grow over time.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylenew.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">DVK <span>arts</span></a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="works.html">My Works</a>
-      <a href="app.html" class="active">App</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<!-- Reusable mountain glyph -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="mtn" viewBox="0 0 24 24" fill="none">
+    <path d="M3 18l5.5-9 4 6 2-3L20 18H3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <circle cx="16.5" cy="6.5" r="1.4" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <span class="brand-mark"><svg><use href="#mtn"/></svg></span>
+      Sketchlog
+    </a>
+    <div class="nav-links">
+      <a class="link" href="#app">Features</a>
+      <a class="link" href="#workflow">How it works</a>
+      <a class="btn btn-primary" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.8v16.4c0 .5.5.8 1 .6l13.5-8.2c.4-.3.4-.9 0-1.2L6 3.2c-.5-.3-1 0-1 .6Z"/></svg>
+        Get the App
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><span class="dot"></span> For visual artists</span>
+      <h1>Draw more.<br><span class="accent">Track it all.</span></h1>
+      <p class="lede">Sketchlog helps you build a consistent drawing practice — snap references, set daily goals, log sketches, and watch your progress grow over time.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.8v16.4c0 .5.5.8 1 .6l13.5-8.2c.4-.3.4-.9 0-1.2L6 3.2c-.5-.3-1 0-1 .6Z"/></svg>
+          Get it on Google Play
+        </a>
+        <a class="btn btn-outline" href="#workflow">See how it works →</a>
+      </div>
+      <p class="micro">Free · No ads · 100% offline</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <span class="phone-app-label">Sketchlog</span>
+          <div class="phone-date">Sunday, Sep 13</div>
+          <div class="phone-greet">Good morning,<br>Maya</div>
+
+          <div class="streak-card">
+            <div class="streak-top">🔥 14-day streak</div>
+            <div class="streak-dots">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span>
+            </div>
+          </div>
+
+          <div class="goal-card">
+            <div class="goal-label">Today's Goal</div>
+            <div class="goal-title">Figure Studies · 3 sketches</div>
+            <div class="bar-track"><div class="bar-fill" style="width:66%"></div></div>
+            <div class="goal-sub">2 / 3 complete</div>
+          </div>
+
+          <div class="recent-label">Recent</div>
+          <div class="recent-item">
+            <div class="recent-thumb"></div>
+            <div>
+              <div class="recent-name">Hands study</div>
+              <div class="recent-time">Yesterday</div>
+            </div>
+            <span class="status-dot"></span>
+          </div>
+          <div class="recent-item">
+            <div class="recent-thumb"></div>
+            <div>
+              <div class="recent-name">Portrait sketch</div>
+              <div class="recent-time">2 days ago</div>
+            </div>
+            <span class="status-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<main>
-
-  <section class="hero">
-    <div class="container hero-split">
-      <div class="hero-copy">
-        <p class="eyebrow">Android App</p>
-        <h1>SketchLog</h1>
-        <p class="lede">
-          A quiet place to track your drawing practice — no internet
-          connection, no accounts, no data collection. Just you and your
-          sketchbook, organized.
-        </p>
-        <div class="hero-actions">
-          <a href="#" class="btn btn-primary">Get it on Google Play</a>
-          <a href="privacy.html" class="btn btn-secondary">Privacy Policy</a>
-        </div>
+<section class="app-showcase" id="app">
+  <div class="wrap">
+    <div class="showcase-head">
+      <div>
+        <p class="eyebrow">The App</p>
+        <h2>Polished. Purposeful.<br>Built for your practice.</h2>
       </div>
-
-      <div class="hero-device">
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <img src="images/SketchLog/home.png" alt="SketchLog home screen showing practice stats and recent activity">
-          </div>
-        </div>
+      <div class="tab-row">
+        <span class="tab active">Home</span>
+        <span class="tab">Categories</span>
+        <span class="tab">Sketches</span>
+        <span class="tab">Progress</span>
+        <span class="tab">Export</span>
       </div>
     </div>
-  </section>
 
-  <section class="app-gallery">
-    <div class="gallery-track">
-      <figure class="phone-card">
+    <div class="showcase-track">
+
+      <!-- Home -->
+      <figure>
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img src="images/SketchLog/categories.png" alt="Categories screen with targets and progress bars">
+            <span class="phone-app-label">Sketchlog</span>
+            <div class="phone-date">Sunday, Sep 13</div>
+            <div class="phone-greet" style="font-size:13.5px">Good morning,<br>Maya</div>
+            <div class="streak-card" style="margin-top:10px">
+              <div class="streak-top" style="font-size:9.5px">🔥 14-day streak</div>
+            </div>
+            <div class="goal-card">
+              <div class="goal-label">Today's Goal</div>
+              <div class="goal-title" style="font-size:10.5px">Figure Studies · 3 sketches</div>
+              <div class="bar-track"><div class="bar-fill" style="width:66%"></div></div>
+              <div class="goal-sub">2 / 3 complete</div>
+            </div>
+            <div class="recent-label">Recent</div>
+            <div class="recent-item">
+              <div class="recent-thumb" style="width:24px;height:24px"></div>
+              <div><div class="recent-name" style="font-size:10px">Hands study</div><div class="recent-time" style="font-size:8.5px">Yesterday</div></div>
+              <span class="status-dot"></span>
+            </div>
           </div>
         </div>
-        <figcaption>Categories &amp; targets</figcaption>
+        <figcaption class="phone-caption">Home</figcaption>
       </figure>
 
-      <figure class="phone-card">
+      <!-- Categories -->
+      <figure>
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img src="images/SketchLog/sketches.png" alt="Sketches grid, filterable by status">
+            <span class="phone-app-label">Categories</span>
+            <div class="phone-greet" style="font-size:13.5px;margin-top:4px">Your Practice</div>
+            <div class="cat-grid">
+              <div class="cat-card">
+                <div class="cat-dot" style="background:var(--ochre)"></div>
+                <div class="cat-name">Portraits</div>
+                <div class="cat-count">24 sketches</div>
+                <div class="cat-bar"><span style="width:70%;background:var(--ochre)"></span></div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-dot" style="background:var(--blue)"></div>
+                <div class="cat-name">Figures</div>
+                <div class="cat-count">18 sketches</div>
+                <div class="cat-bar"><span style="width:55%;background:var(--blue)"></span></div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-dot" style="background:var(--green)"></div>
+                <div class="cat-name">Still Life</div>
+                <div class="cat-count">11 sketches</div>
+                <div class="cat-bar"><span style="width:40%;background:var(--green)"></span></div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-dot" style="background:var(--pink)"></div>
+                <div class="cat-name">Landscapes</div>
+                <div class="cat-count">7 sketches</div>
+                <div class="cat-bar"><span style="width:25%;background:var(--pink)"></span></div>
+              </div>
+            </div>
+            <div class="total-row"><span>Total sketches</span><b>60</b></div>
+            <div class="mini-bars">
+              <span style="height:30%"></span><span style="height:55%"></span><span style="height:40%"></span>
+              <span style="height:70%"></span><span style="height:50%"></span><span style="height:85%"></span><span style="height:60%"></span>
+            </div>
           </div>
         </div>
-        <figcaption>Every sketch, at a glance</figcaption>
+        <figcaption class="phone-caption">Categories</figcaption>
       </figure>
 
-      <figure class="phone-card">
+      <!-- Sketches -->
+      <figure>
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img src="images/SketchLog/progress.png" alt="Progress screen with time filters and weekly activity chart">
+            <span class="phone-app-label">Portraits</span>
+            <div class="phone-greet" style="font-size:13.5px;margin-top:4px">24 Sketches</div>
+            <div class="filter-row">
+              <span class="filter-pill active">All</span>
+              <span class="filter-pill">Done</span>
+              <span class="filter-pill">WIP</span>
+            </div>
+            <div class="sketch-grid">
+              <div class="sketch-thumb"><span class="status-dot" style="background:var(--green)"></span></div>
+              <div class="sketch-thumb"><span class="status-dot" style="background:var(--ochre)"></span></div>
+              <div class="sketch-thumb"></div>
+              <div class="sketch-thumb"><span class="status-dot" style="background:var(--green)"></span></div>
+              <div class="sketch-thumb"><span class="status-dot" style="background:var(--ochre)"></span></div>
+              <div class="sketch-thumb"></div>
+            </div>
           </div>
         </div>
-        <figcaption>Progress, filtered by time</figcaption>
+        <figcaption class="phone-caption">Sketches</figcaption>
       </figure>
 
-      <figure class="phone-card">
+      <!-- Progress -->
+      <figure>
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img src="images/SketchLog/export.png" alt="Export screen for generating a PDF practice report">
+            <span class="phone-app-label">Progress</span>
+            <div class="phone-greet" style="font-size:13.5px;margin-top:4px">This Month</div>
+            <div class="donut">
+              <div class="donut-inner">
+                <span class="donut-pct">72%</span>
+                <span class="donut-sub">of goal</span>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-chip"><b>18</b><span>Sketches</span></div>
+              <div class="stat-chip"><b>24h</b><span>&nbsp;</span></div>
+              <div class="stat-chip"><b>14d</b><span>Streak</span></div>
+            </div>
+            <div class="goal-label" style="margin-top:12px">Weekly</div>
+            <div class="weekly-bars">
+              <span style="height:35%"></span><span style="height:50%"></span><span style="height:20%"></span>
+              <span style="height:65%"></span><span style="height:90%"></span><span style="height:45%"></span><span style="height:70%"></span>
+            </div>
+            <div class="weekly-labels">
+              <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+            </div>
           </div>
         </div>
-        <figcaption>PDF reports, one tap</figcaption>
+        <figcaption class="phone-caption">Progress</figcaption>
       </figure>
+
+      <!-- Export -->
+      <figure>
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <span class="phone-app-label">Export</span>
+            <div class="phone-greet" style="font-size:13.5px;margin-top:4px">Share Progress</div>
+            <div class="export-card">
+              <div class="export-name">sketchlog_sep_2026.pdf</div>
+              <div class="export-grid">
+                <div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+            <div class="goal-label" style="margin-top:12px">Include in export</div>
+            <div class="check-row"><span class="check-box checked"></span> All sketches</div>
+            <div class="check-row"><span class="check-box"></span> Progress charts</div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">Export</figcaption>
+      </figure>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Features</p>
-        <h2>Built around a simple habit</h2>
-      </div>
-      <div class="feature-list">
-        <div class="feature">
-          <h3>Reference &amp; sketch capture</h3>
-          <p>Photograph your reference material, then your completed drawing, with overlay alignment to compare the two.</p>
-        </div>
-        <div class="feature">
-          <h3>Progress tracking</h3>
-          <p>Organize practice by category — portraits, hands, landscapes — and set personal targets to work toward.</p>
-        </div>
-        <div class="feature">
-          <h3>Privacy-first by design</h3>
-          <p>No accounts, no advertising, no analytics. Every photo and record stays on your device.</p>
-        </div>
-        <div class="feature">
-          <h3>Works entirely offline</h3>
-          <p>SketchLog needs no internet connection to function — your practice log is yours alone.</p>
-        </div>
-      </div>
+<section class="workflow" id="workflow">
+  <div class="wrap">
+    <div class="workflow-head">
+      <p class="eyebrow">Workflow</p>
+      <h2>Six steps from blank page<br><span class="accent">to a growing body of work.</span></h2>
     </div>
-  </section>
 
-  <section>
-    <div class="container">
-      <div class="panel center">
-        <h2>Start logging your practice</h2>
-        <p>Free to download. No sign-up required.</p>
-        <a href="#" class="btn btn-primary">Get it on Google Play</a>
+    <div class="step-grid">
+
+      <div class="step">
+        <div class="step-top">
+          <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 7l1.6-2.5h4.8L16 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.4" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <span class="step-num">01</span>
+        </div>
+        <h3>Snap a reference</h3>
+        <p>Photograph or import any reference image directly into the app.</p>
       </div>
-    </div>
-  </section>
 
-</main>
+      <div class="step">
+        <div class="step-top">
+          <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></div>
+          <span class="step-num">02</span>
+        </div>
+        <h3>Set your target</h3>
+        <p>Define a sketch goal — how many studies, by when, and which category.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-top">
+          <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20l1.2-4.2L15.6 5.4a1.5 1.5 0 0 1 2.1 0l1 1a1.5 1.5 0 0 1 0 2.1L8.2 18.8 4 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M13.5 7.5l3 3" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <span class="step-num">03</span>
+        </div>
+        <h3>Draw your sketch</h3>
+        <p>Work at your own pace, on paper or digital. Sketchlog stays out of your way.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-top">
+          <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span class="step-num">04</span>
+        </div>
+        <h3>Mark it done</h3>
+        <p>Log the completed sketch in seconds. Add a photo of your work.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-top">
+          <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19V10M12 19V5M19 19v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <span class="step-num">05</span>
+        </div>
+        <h3>Watch progress</h3>
+        <p>See streaks, category breakdowns, and weekly charts build over time.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-top">
+          <div class="step-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3h8l4 4v14H6V3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 14.5h7M8.5 17.5h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="step-num">06</span>
+        </div>
+        <h3>Export your portfolio</h3>
+        <p>Generate a clean PDF of any date range to share or archive.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="privacy">
+  <div class="wrap">
+    <div class="privacy-panel">
+      <div class="privacy-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="privacy-copy">
+        <h2>No ads. No tracking.<br><span class="accent">100% offline.</span></h2>
+        <p>Sketchlog lives entirely on your device. Your sketches, references, and progress are yours — never uploaded to a server, never shared with third parties, never monetized.</p>
+      </div>
+      <ul class="check-list">
+        <li><span class="dot"></span> Your data stays on device</li>
+        <li><span class="dot"></span> No account required</li>
+        <li><span class="dot"></span> Works without internet</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <div class="final-mark"><svg><use href="#mtn"/></svg></div>
+    <h2>Start your practice<br><span class="accent">one sketch at a time.</span></h2>
+    <p>Free forever. No subscription, no paywalls. Just you and your sketchbook.</p>
+    <a class="btn btn-primary" href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.8v16.4c0 .5.5.8 1 .6l13.5-8.2c.4-.3.4-.9 0-1.2L6 3.2c-.5-.3-1 0-1 .6Z"/></svg>
+      Get it on Google Play
+    </a>
+    <a class="privacy-link" href="https://dvkarts.com/privacy.html">Privacy Policy</a>
+  </div>
+</section>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 DVKarts. All rights reserved.</p>
+  <div class="wrap">
+    <a class="footer-brand" href="#">
+      <span class="brand-mark"><svg><use href="#mtn"/></svg></span>
+      Sketchlog
+    </a>
+    <p class="footer-copy">© 2026 Sketchlog. All rights reserved.</p>
     <div class="footer-links">
-      <a href="works.html">My Works</a>
-      <a href="app.html">App</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy</a>
-    </div>
-    <div class="social-links">
-      <a href="https://www.instagram.com/deepak3dart/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
-      </a>
-      <a href="https://www.facebook.com/DeepakDigitalArts" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2.5V5h-2.7C11.5 5 10 6.6 10 9v2.2H8V15h2v6.5h3.3V15h2.4l.4-3.8h-2.8V9.2c0-.5.3-.7.7-.7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="https://www.youtube.com/@deepak3dart" target="_blank" rel="noopener" aria-label="YouTube">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 9.7v4.6l4-2.3-4-2.3Z" fill="currentColor"/></svg>
-      </a>
-      <a href="https://deepakvishwakarmaarts.blogspot.com/" target="_blank" rel="noopener" aria-label="Blog">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 4.5h9L19 9v10.5H5V4.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 4.5V9h5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 13h8M8 16h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-      </a>
+      <a href="https://dvkarts.com/privacy.html">Privacy Policy</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter / X</a>
     </div>
   </div>
 </footer>
