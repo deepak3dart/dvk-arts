@@ -255,6 +255,11 @@ img { max-width: 100%; display: block; }
 .footer-links { display: flex; gap: 22px; }
 .footer-links a { color: var(--muted); font-size: 13px; }
 .footer-links a:hover { color: var(--cream); }
+@media (max-width: 640px) {
+  .nav .wrap { flex-wrap: wrap; row-gap: 14px; padding: 16px 15px; }
+  .nav-links { flex-wrap: wrap; width: 100%; margin-top: 4px; margin-left: 0px; margin-right: 5px; gap: 14px 20px; }
+  .nav-links .btn { flex-basis: 100%; justify-content: center; }
+}
 
 @media (max-width: 900px) {
   .hero .wrap { grid-template-columns: 1fr; }
