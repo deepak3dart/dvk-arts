@@ -75,11 +75,11 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Phone ---------- */
 .phone {
-  position: relative; width: 280px; border-radius: 36px; background: var(--surface-2);
-  border: 1px solid var(--line); padding: 10px; box-shadow: 0 40px 80px -30px rgba(0,0,0,0.6);
+  position: relative; width: 220px; border-radius: 30px; background: var(--surface-2);
+  border: 1px solid var(--line); padding: 8px; box-shadow: 0 40px 80px -30px rgba(0,0,0,0.6);
 }
-.phone-notch { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 70px; height: 6px; background: var(--line); border-radius: 4px; z-index: 2; }
-.phone-screen { background: var(--bg); border-radius: 28px; padding: 26px 18px 20px; min-height: 500px; overflow: hidden; }
+.phone-notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 58px; height: 5px; background: var(--line); border-radius: 4px; z-index: 2; }
+.phone-screen { background: var(--bg); border-radius: 22px; padding: 20px 14px 16px; min-height: 380px; overflow: hidden; }
 .hero-visual { display: flex; justify-content: center; }
 .phone-app-label { font-size: 9.5px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
 .phone-date { font-size: 10px; color: var(--ochre); margin-top: 10px; }
@@ -255,12 +255,6 @@ img { max-width: 100%; display: block; }
 .footer-links { display: flex; gap: 22px; }
 .footer-links a { color: var(--muted); font-size: 13px; }
 .footer-links a:hover { color: var(--cream); }
-
-@media (max-width: 640px) {
-  .nav .wrap { flex-wrap: wrap; row-gap: 14px; padding: 16px 0; }
-  .nav-links { flex-wrap: wrap; width: 100%; margin-top: 4px; gap: 14px 20px; }
-  .nav-links .btn { flex-basis: 100%; justify-content: center; }
-}
 
 @media (max-width: 900px) {
   .hero .wrap { grid-template-columns: 1fr; }
