@@ -6,7 +6,7 @@
 <title>Sketchlog — Draw more. Track it all.</title>
 <meta name="description" content="Sketchlog helps you build a consistent drawing practice — snap references, set daily goals, log sketches, and watch your progress grow over time.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stylenew.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
       <a class="link" href="#app">Features</a>
       <a class="link" href="#workflow">How it works</a>
       <a class="btn btn-primary" href="#">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.8v16.4c0 .5.5.8 1 .6l13.5-8.2c.4-.3.4-.9 0-1.2L6 3.2c-.5-.3-1 0-1 .6Z"/></svg>
+       <svg fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5_logos</title><path d="M48,59.49v393a4.33,4.33,0,0,0,7.37,3.07L260,256,55.37,56.42A4.33,4.33,0,0,0,48,59.49Z"/><path d="M345.8,174,89.22,32.64l-.16-.09c-4.42-2.4-8.62,3.58-5,7.06L285.19,231.93Z"/><path d="M84.08,472.39c-3.64,3.48.56,9.46,5,7.06l.16-.09L345.8,338l-60.61-57.95Z"/><path d="M449.38,231l-71.65-39.46L310.36,256l67.37,64.43L449.38,281C468.87,270.23,468.87,241.77,449.38,231Z"/></svg>
         Get the App
       </a>
     </div>
@@ -45,7 +45,7 @@
 
       <div class="cta-row">
         <a class="btn btn-primary" href="#">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.8v16.4c0 .5.5.8 1 .6l13.5-8.2c.4-.3.4-.9 0-1.2L6 3.2c-.5-.3-1 0-1 .6Z"/></svg>
+          <svg fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5_logos</title><path d="M48,59.49v393a4.33,4.33,0,0,0,7.37,3.07L260,256,55.37,56.42A4.33,4.33,0,0,0,48,59.49Z"/><path d="M345.8,174,89.22,32.64l-.16-.09c-4.42-2.4-8.62,3.58-5,7.06L285.19,231.93Z"/><path d="M84.08,472.39c-3.64,3.48.56,9.46,5,7.06l.16-.09L345.8,338l-60.61-57.95Z"/><path d="M449.38,231l-71.65-39.46L310.36,256l67.37,64.43L449.38,281C468.87,270.23,468.87,241.77,449.38,231Z"/></svg>
           Get it on Google Play
         </a>
         <a class="btn btn-outline" href="#workflow">See how it works →</a>
@@ -107,18 +107,18 @@
         <h2>Polished. Purposeful.<br>Built for your practice.</h2>
       </div>
       <div class="tab-row">
-        <span class="tab active">Home</span>
-        <span class="tab">Categories</span>
-        <span class="tab">Sketches</span>
-        <span class="tab">Progress</span>
-        <span class="tab">Export</span>
+        <button class="tab active" data-target="phone-home">Home</button>
+        <button class="tab" data-target="phone-categories">Categories</button>
+        <button class="tab" data-target="phone-sketches">Sketches</button>
+        <button class="tab" data-target="phone-progress">Progress</button>
+        <button class="tab" data-target="phone-export">Export</button>
       </div>
     </div>
 
     <div class="showcase-track">
 
       <!-- Home -->
-      <figure>
+      <figure id="phone-home" class="active-phone">
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
@@ -146,7 +146,7 @@
       </figure>
 
       <!-- Categories -->
-      <figure>
+      <figure id="phone-categories">
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
@@ -189,7 +189,7 @@
       </figure>
 
       <!-- Sketches -->
-      <figure>
+      <figure id="phone-sketches">
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
@@ -214,7 +214,7 @@
       </figure>
 
       <!-- Progress -->
-      <figure>
+      <figure id="phone-progress">
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
@@ -231,7 +231,7 @@
               <div class="stat-chip"><b>24h</b><span>&nbsp;</span></div>
               <div class="stat-chip"><b>14d</b><span>Streak</span></div>
             </div>
-            <div class="goal-label" style="margin-top:12px">Weekly</div>
+            <div class="goal-label" style="margin-top:8px">Weekly</div>
             <div class="weekly-bars">
               <span style="height:35%"></span><span style="height:50%"></span><span style="height:20%"></span>
               <span style="height:65%"></span><span style="height:90%"></span><span style="height:45%"></span><span style="height:70%"></span>
@@ -245,7 +245,7 @@
       </figure>
 
       <!-- Export -->
-      <figure>
+      <figure id="phone-export">
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
@@ -361,7 +361,7 @@
     <h2>Start your practice<br><span class="accent">one sketch at a time.</span></h2>
     <p>Free forever. No subscription, no paywalls. Just you and your sketchbook.</p>
     <a class="btn btn-primary" href="#">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.8v16.4c0 .5.5.8 1 .6l13.5-8.2c.4-.3.4-.9 0-1.2L6 3.2c-.5-.3-1 0-1 .6Z"/></svg>
+     <svg fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5_logos</title><path d="M48,59.49v393a4.33,4.33,0,0,0,7.37,3.07L260,256,55.37,56.42A4.33,4.33,0,0,0,48,59.49Z"/><path d="M345.8,174,89.22,32.64l-.16-.09c-4.42-2.4-8.62,3.58-5,7.06L285.19,231.93Z"/><path d="M84.08,472.39c-3.64,3.48.56,9.46,5,7.06l.16-.09L345.8,338l-60.61-57.95Z"/><path d="M449.38,231l-71.65-39.46L310.36,256l67.37,64.43L449.38,281C468.87,270.23,468.87,241.77,449.38,231Z"/></svg>
       Get it on Google Play
     </a>
     <a class="privacy-link" href="https://dvkarts.com/privacy.html">Privacy Policy</a>
@@ -383,5 +383,55 @@
   </div>
 </footer>
 
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const track = document.querySelector('.showcase-track');
+  const figures = document.querySelectorAll('.showcase-track figure');
+
+  function setActiveTab(tab) {
+
+    tabs.forEach((t) => {
+      t.classList.remove('active');
+      t.style.background = 'transparent';
+      t.style.borderColor = '#332D24';
+      t.style.color = '#8F8879';
+    });
+
+    tab.classList.add('active');
+    tab.style.background = '#D3902E';
+    tab.style.borderColor = '#D3902E';
+    tab.style.color = '#1B1206';
+  }
+
+  function setActivePhone(targetId) {
+
+    figures.forEach((figure) => {
+      figure.classList.toggle('active-phone', figure.id === targetId);
+    });
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', (event) => {
+
+      const clicked = event.currentTarget;
+      setActiveTab(clicked);
+      setActivePhone(clicked.dataset.target);
+
+      const target = document.getElementById(clicked.dataset.target);
+
+      if (target && track) {
+        const targetLeft = target.offsetLeft;
+        const targetWidth = target.offsetWidth;
+        const trackWidth = track.clientWidth;
+
+        track.scrollTo({
+          left: targetLeft - (trackWidth - targetWidth) / 2,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
 </body>
-</html>
+</html> 
